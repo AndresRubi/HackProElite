@@ -6,21 +6,16 @@ using System.Web.Mvc;
 
 namespace HackProElite.Controllers
 {
-    public class HomeController : Controller
+    public class UserController : Controller
     {
-        // GET: Home
-        public ActionResult Index()
+        // GET: User
+        public ActionResult AdminIndex()
         {
             return View();
         }
-        // GET: Register
-        public ActionResult Register()
+        public ActionResult AdminEvent()
         {
             return View();
-        
         }
-
-       
     }
-
-    }
+}

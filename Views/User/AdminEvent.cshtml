@@ -1,0 +1,141 @@
+﻿
+@{
+    ViewBag.Title = "AdminEvent";
+}
+
+<h2>AdminEvent</h2>
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>SB Admin - Bootstrap Admin Template</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="css/sb-admin.css" rel="stylesheet">
+
+    <!-- Custom Fonts -->
+    <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+<body>
+
+    <div id="wrapper">
+
+      
+
+        <div id="page-wrapper">
+
+            <form class="form-horizontal">
+                <fieldset>
+
+                    <!-- Form Name -->
+                    <legend>Create Event</legend>
+
+                    <!-- Text input-->
+                    <div class="form-group">
+                        <label class="col-md-4 control-label" for="eventName">Event Name</label>
+                        <div class="col-md-5">
+                            <input id="eventName" name="eventName" type="text" placeholder="name" class="form-control input-md">
+                            <span class="help-block">write here the event name</span>
+                        </div>
+                    </div>
+
+
+                    <div class="form-group">
+                        <label class="col-md-4 control-label" for="eventName">Event Date</label>
+                        <div class="col-md-5">
+                            <input type="date" name="bday">
+
+                        </div>
+                    </div>
+                    
+
+                    <!-- Multiple Radios -->
+                    <div class="form-group">
+                        <label class="col-md-4 control-label" for="typeEvent">Event Type</label>
+                        <div class="col-md-4">
+                            <div class="radio">
+                                <label for="typeEvent-0">
+                                    <input type="radio" name="typeEvent" id="typeEvent-0" value="0" checked="checked">
+                                    Hackathon
+                                </label>
+                            </div>
+                            <div class="radio">
+                                <label for="typeEvent-1">
+                                    <input type="radio" name="typeEvent" id="typeEvent-1" value="1">
+                                    Barcamp
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Multiple Radios (inline) -->
+                    <div class="form-group">
+                        <label class="col-md-4 control-label" for="radios">Public or Private?</label>
+                        <div class="col-md-4">
+                            <label class="radio-inline" for="radios-0">
+                                <input type="radio" name="radios" id="radios-0" value="0" checked="checked">
+                                Private
+                            </label>
+                            <label class="radio-inline" for="radios-1">
+                                <input type="radio" name="radios" id="radios-1" value="1">
+                                Public
+                            </label>
+                        </div>
+                    </div>
+
+                    <!-- File Button -->
+                    <div class="form-group">
+                        <label class="col-md-4 control-label" for="imagenEvento">Imagen Del Evento</label>
+                        <div class="col-md-4">
+                            <input id="imagenEvento" name="imagenEvento" class="input-file" type="file">
+                        </div>
+                    </div>
+
+                    <!-- Textarea -->
+                    <div class="form-group">
+                        <label class="col-md-4 control-label" for="descriptionEvent">Event Description</label>
+                        <div class="col-md-4">
+                            <textarea class="form-control" id="descriptionEvent" name="descriptionEvent">only text</textarea>
+                        </div>
+                    </div>
+
+                    <!-- Button -->
+                    <div class="form-group">
+                        <label class="col-md-4 control-label" for="sendButton"></label>
+                        <div class="col-md-4">
+                            <button id="sendButton" name="sendButton" class="btn btn-primary">Create</button>
+                        </div>
+                    </div>
+
+                </fieldset>
+            </form>
+
+        </div>
+        <!-- /#page-wrapper -->
+
+    </div>
+    <!-- /#wrapper -->
+    <!-- jQuery -->
+    <script src="js/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+
+</body>

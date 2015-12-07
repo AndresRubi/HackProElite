@@ -113,7 +113,7 @@
     <Content Include="Content\font-awesome\css\font-awesome.min.css" />
     <Content Include="Content\font-awesome\fonts\fontawesome-webfont.svg" />
     <Content Include="Content\fonts\glyphicons-halflings-regular.svg" />
-    <Content Include="Content\img\header1.jpg" />
+    <Content Include="Content\img\header.jpg" />
     <Content Include="Content\img\header3.jpg" />
     <Content Include="Content\img\portfolio\1.jpg" />
     <Content Include="Content\img\portfolio\2.jpg" />
@@ -157,6 +157,7 @@
   <ItemGroup>
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\UserController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -212,7 +213,10 @@
     <Content Include="fonts\glyphicons-halflings-regular.eot" />
     <Content Include="Scripts\jquery-1.10.2.min.map" />
     <Content Include="Views\Home\Register.cshtml" />
-    <Content Include="Views\Home\AdminIndex.cshtml" />
+    <Content Include="Views\User\AdminIndex.cshtml" />
+    <Content Include="Views\User\AdminEvent.cshtml" />
+    <Content Include="Views\User\AdminUsers.cshtml" />
+    <Content Include="Views\Shared\_UserLayout.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

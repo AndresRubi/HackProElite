@@ -1,9 +1,6 @@
-﻿
-@{
-    ViewBag.Title = "AdminIndex";
-}
+﻿<!DOCTYPE html>
+<html lang="en">
 
-<h2>AdminIndex</h2>
 <head>
 
     <meta charset="utf-8">
@@ -20,6 +17,9 @@
     <!-- Custom CSS -->
     <link href="~/Content/css/sb-admin.css" rel="stylesheet">
 
+    <!-- Morris Charts CSS -->
+    <link href="~/Content/css/plugins/morris.css" rel="stylesheet">
+
     <!-- Custom Fonts -->
     <link href="~/Content/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
 
@@ -30,13 +30,12 @@
         <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
 
-
 </head>
 
 <body>
-
+    @RenderBody()
     <div id="wrapper">
-
+       
         <!-- Navigation -->
         <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
             <!-- Brand and toggle get grouped for better mobile display -->
@@ -47,8 +46,9 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="index.html">SB Admin</a>
+                <a class="navbar-brand" href="index.html">this is my test</a>
             </div>
+             
             <!-- Top Menu Items -->
             <ul class="nav navbar-right top-nav">
                 <li class="dropdown">
@@ -153,6 +153,8 @@
                     </ul>
                 </li>
             </ul>
+
+
             <!-- Sidebar Menu Items - These collapse to the responsive navigation menu on small screens -->
             <div class="collapse navbar-collapse navbar-ex1-collapse">
                 <ul class="nav navbar-nav side-nav">
@@ -160,17 +162,36 @@
                         <a href="index.html"><i class="fa fa-fw fa-dashboard"></i> Dashboard</a>
                     </li>
                     <li>
-                        <a href="charts.html"><i class="fa fa-fw fa-bar-chart-o"></i> Charts</a>
-                    </li>
-                    <li class="active">
-                        <a href="tables.html"><i class="fa fa-fw fa-table"></i> Tables</a>
+                        <a href="javascript:;" data-toggle="collapse" data-target="#Event"><i class="fa fa-fw fa-arrows-v"></i> Events <i class="fa fa-fw fa-caret-down"></i></a>
+                        <ul id="Event" class="collapse">
+                            <li>
+                                <a href="@Url.Action("AdminEvent","User")"><span> Crear</span></a>
+                            </li>
+                            <li>
+                                <a href="#">Modificar</a>
+                            </li>
+                            <li>
+                                <a href="#">Eliminar</a>
+                            </li>
+                        </ul>
                     </li>
                     <li>
-                        <!-- test-->
-                    <li class="fa fa-fw fa-edit">
-                        @Html.ActionLink("Index", "Register", "Home")
+                        <a href="javascript:;" data-toggle="collapse" data-target="#User"><i class="fa fa-fw fa-arrows-v"></i> User <i class="fa fa-fw fa-caret-down"></i></a>
+                        <ul id="User" class="collapse">
+                            <li>
+                                <a href="#">Crear</a>
+                            </li>
+                            <li>
+                                <a href="#">Modificar</a>
+                            </li>
+                            <li>
+                                <a href="#">Eliminar</a>
+                            </li>
+                        </ul>
                     </li>
-
+                    <li>
+                        <a href="forms.html"><i class="fa fa-fw fa-edit"></i> Patrocinadores</a>
+                    </li>
                     <li>
                         <a href="bootstrap-elements.html"><i class="fa fa-fw fa-desktop"></i> Bootstrap Elements</a>
                     </li>
@@ -181,7 +202,7 @@
                         <a href="javascript:;" data-toggle="collapse" data-target="#demo"><i class="fa fa-fw fa-arrows-v"></i> Dropdown <i class="fa fa-fw fa-caret-down"></i></a>
                         <ul id="demo" class="collapse">
                             <li>
-                                <a href="#">Dropdown Item</a>
+                                <a href="#">asda Item</a>
                             </li>
                             <li>
                                 <a href="#">Dropdown Item</a>
@@ -196,101 +217,12 @@
                     </li>
                 </ul>
             </div>
-            <!-- /.navbar-collapse -->
+          
+              <!-- /.navbar-collapse -->
         </nav>
 
-        <div id="page-wrapper">
-
-            <div class="container-fluid">
-
-                <!-- Page Heading -->
-                <div class="row">
-                    <div class="col-lg-12">
-                        <h1 class="page-header">
-                            Tables
-                        </h1>
-                        <ol class="breadcrumb">
-                            <li>
-                                <i class="fa fa-dashboard"></i>  <a href="index.html">Dashboard</a>
-                            </li>
-                            <li class="active">
-                                <i class="fa fa-table"></i> Tables
-                            </li>
-                        </ol>
-                    </div>
-                </div>
-                <!-- /.row -->
-
-                <div class="row">
-                    <!-- aqui va la lista -->
-                    <div class="col-lg-6">
-                        <h2>Bordered with Striped Rows</h2>
-                        <div class="table-responsive">
-                            <table class="table table-bordered table-hover table-striped">
-                                <thead>
-                                    <tr>
-                                        <th>Page</th>
-                                        <th>Visits</th>
-                                        <th>% New Visits</th>
-                                        <th>Revenue</th>
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                    <tr>
-                                        <td>/index.html</td>
-                                        <td>1265</td>
-                                        <td>32.3%</td>
-                                        <td>$321.33</td>
-                                    </tr>
-                                    <tr>
-                                        <td>/about.html</td>
-                                        <td>261</td>
-                                        <td>33.3%</td>
-                                        <td>$234.12</td>
-                                    </tr>
-                                    <tr>
-                                        <td>/sales.html</td>
-                                        <td>665</td>
-                                        <td>21.3%</td>
-                                        <td>$16.34</td>
-                                    </tr>
-                                    <tr>
-                                        <td>/blog.html</td>
-                                        <td>9516</td>
-                                        <td>89.3%</td>
-                                        <td>$1644.43</td>
-                                    </tr>
-                                    <tr>
-                                        <td>/404.html</td>
-                                        <td>23</td>
-                                        <td>34.3%</td>
-                                        <td>$23.52</td>
-                                    </tr>
-                                    <tr>
-                                        <td>/services.html</td>
-                                        <td>421</td>
-                                        <td>60.3%</td>
-                                        <td>$724.32</td>
-                                    </tr>
-                                    <tr>
-                                        <td>/blog/post.html</td>
-                                        <td>1233</td>
-                                        <td>93.2%</td>
-                                        <td>$126.34</td>
-                                    </tr>
-                                </tbody>
-                            </table>
-                        </div>
-                    </div>
-                </div>
-                <!-- /.row -->
 
 
-
-            </div>
-            <!-- /.container-fluid -->
-
-        </div>
         <!-- /#page-wrapper -->
 
     </div>
@@ -301,4 +233,11 @@
     <!-- Bootstrap Core JavaScript -->
     <script src="~/Content/js/bootstrap.min.js"></script>
 
+    <!-- Morris Charts JavaScript -->
+    <script src="~/Content/js/plugins/morris/raphael.min.js"></script>
+    <script src="~/Content/js/plugins/morris/morris.min.js"></script>
+    <script src="~/Content/js/plugins/morris/morris-data.js"></script>
+
 </body>
+
+</html>
