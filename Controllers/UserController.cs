@@ -17,5 +17,9 @@ namespace HackProElite.Controllers
         {
             return View();
         }
+        public ActionResult AdminUsers()
+        {
+            return View();
+        }
     }
 }

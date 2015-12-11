@@ -159,62 +159,43 @@
             <div class="collapse navbar-collapse navbar-ex1-collapse">
                 <ul class="nav navbar-nav side-nav">
                     <li>
-                        <a href="index.html"><i class="fa fa-fw fa-dashboard"></i> Dashboard</a>
+                        <a href="@Url.Action("AdminIndex","User")"><i class="fa fa-fw fa-dashboard"></i> Dashboard</a>
                     </li>
                     <li>
                         <a href="javascript:;" data-toggle="collapse" data-target="#Event"><i class="fa fa-fw fa-arrows-v"></i> Events <i class="fa fa-fw fa-caret-down"></i></a>
                         <ul id="Event" class="collapse">
                             <li>
-                                <a href="@Url.Action("AdminEvent","User")"><span> Crear</span></a>
+                                <a href="@Url.Action("AdminEvent","User")"><span> Create Event</span></a>
                             </li>
                             <li>
-                                <a href="#">Modificar</a>
+                                <a href="@Url.Action("AdminEvent","User")#EventManager">Manage Event</a>
                             </li>
-                            <li>
-                                <a href="#">Eliminar</a>
-                            </li>
+                           
                         </ul>
                     </li>
                     <li>
                         <a href="javascript:;" data-toggle="collapse" data-target="#User"><i class="fa fa-fw fa-arrows-v"></i> User <i class="fa fa-fw fa-caret-down"></i></a>
                         <ul id="User" class="collapse">
                             <li>
-                                <a href="#">Crear</a>
+                                <a href="@Url.Action("AdminUsers","User")">Create User</a>
                             </li>
                             <li>
-                                <a href="#">Modificar</a>
+                                <a href="#">Manage Users</a>
                             </li>
-                            <li>
-                                <a href="#">Eliminar</a>
-                            </li>
+                        
                         </ul>
                     </li>
                     <li>
                         <a href="forms.html"><i class="fa fa-fw fa-edit"></i> Patrocinadores</a>
                     </li>
                     <li>
-                        <a href="bootstrap-elements.html"><i class="fa fa-fw fa-desktop"></i> Bootstrap Elements</a>
+                        <a href="bootstrap-elements.html"><i class="fa fa-fw fa-desktop"></i>Calendar</a>
                     </li>
                     <li>
                         <a href="bootstrap-grid.html"><i class="fa fa-fw fa-wrench"></i> Bootstrap Grid</a>
                     </li>
-                    <li>
-                        <a href="javascript:;" data-toggle="collapse" data-target="#demo"><i class="fa fa-fw fa-arrows-v"></i> Dropdown <i class="fa fa-fw fa-caret-down"></i></a>
-                        <ul id="demo" class="collapse">
-                            <li>
-                                <a href="#">asda Item</a>
-                            </li>
-                            <li>
-                                <a href="#">Dropdown Item</a>
-                            </li>
-                        </ul>
-                    </li>
-                    <li>
-                        <a href="blank-page.html"><i class="fa fa-fw fa-file"></i> Blank Page</a>
-                    </li>
-                    <li>
-                        <a href="index-rtl.html"><i class="fa fa-fw fa-dashboard"></i> RTL Dashboard</a>
-                    </li>
+                    
+                   
                 </ul>
             </div>
           

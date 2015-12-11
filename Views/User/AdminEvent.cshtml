@@ -40,7 +40,6 @@
       
 
         <div id="page-wrapper">
-
             <form class="form-horizontal">
                 <fieldset>
 
@@ -52,42 +51,87 @@
                         <label class="col-md-4 control-label" for="eventName">Event Name</label>
                         <div class="col-md-5">
                             <input id="eventName" name="eventName" type="text" placeholder="name" class="form-control input-md">
-                            <span class="help-block">write here the event name</span>
+                            
                         </div>
                     </div>
-
-
+                    <!-- calendario -->
                     <div class="form-group">
-                        <label class="col-md-4 control-label" for="eventName">Event Date</label>
+                        <label class="col-md-4 control-label" for="dateEvent">Event Begin</label>
                         <div class="col-md-5">
-                            <input type="date" name="bday">
+                            <input type="date" name="dateStartEvent" >
+                            <input type="time" name="beginEvent">
+                            
+                        </div>
+
+                        
+                    </div>
+
+                    <!-- Horas -->
+                    <div class="form-group">
+                        <label class="col-md-4 control-label" for="timeEvent">Event Ends</label>
+                        <div class="col-md-5">
+                            <input type="date" name="dateEndEvent">
+                            <input type="time" name="endEvent">
+                        </div>
+                    </div> 
+                    <!-- Prepended text funds-->
+                    <div class="form-group">
+                        <label class="col-md-4 control-label" for="fundsEvent">Event Funds</label>
+                        <div class="col-md-4">
+                            <div class="input-group">
+                                <span class="input-group-addon">Amount</span>
+                                <input id="fundsEvent" name="fundsEvent" class="form-control" placeholder="lps" type="text" required="">
+                            </div>
 
                         </div>
                     </div>
+                    <!-- Prepended text price-->
+                    <div class="form-group">
+                        <label class="col-md-4 control-label" for="priceEvent">Event Price</label>
+                        <div class="col-md-4">
+                            <div class="input-group">
+                                <span class="input-group-addon">Amount</span>
+                                <input id="priceEvent" name="priceEvent" class="form-control" placeholder="lps" type="text" required="">
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <!-- Multiple Checkboxes (inline) -->
+                    <div class="form-group">
+                        <label class="col-md-4 control-label" for="voteTypeEvent">Votation Type</label>
+                        <div class="col-md-4">
+                            <label class="checkbox-inline" for="voteTypeEvent-0">
+                                <input type="checkbox" name="voteTypeEvent" id="voteTypeEvent-0" value="0">
+                                Public
+                            </label>
+                            <label class="checkbox-inline" for="voteTypeEvent-1">
+                                <input type="checkbox" name="voteTypeEvent" id="voteTypeEvent-1" value="1">
+                                Private
+                            </label>
+                        </div>
+                    </div>
+
                     
 
-                    <!-- Multiple Radios -->
+                    <!-- Multiple Radios (inline) -->
                     <div class="form-group">
-                        <label class="col-md-4 control-label" for="typeEvent">Event Type</label>
+                        <label class="col-md-4 control-label" for="typeEvent">TypeEvent</label>
                         <div class="col-md-4">
-                            <div class="radio">
-                                <label for="typeEvent-0">
-                                    <input type="radio" name="typeEvent" id="typeEvent-0" value="0" checked="checked">
-                                    Hackathon
-                                </label>
-                            </div>
-                            <div class="radio">
-                                <label for="typeEvent-1">
-                                    <input type="radio" name="typeEvent" id="typeEvent-1" value="1">
-                                    Barcamp
-                                </label>
-                            </div>
+                            <label class="radio-inline" for="typeEvent-0">
+                                <input type="radio" name="typeEvent" id="typeEvent-0" value="0" checked="checked">
+                                Hacktathon
+                            </label>
+                            <label class="radio-inline" for="typeEvent-1">
+                                <input type="radio" name="typeEvent" id="typeEvent-1" value="1">
+                                Barcamp
+                            </label>
                         </div>
                     </div>
 
                     <!-- Multiple Radios (inline) -->
                     <div class="form-group">
-                        <label class="col-md-4 control-label" for="radios">Public or Private?</label>
+                        <label class="col-md-4 control-label" for="radios">Event Privacy</label>
                         <div class="col-md-4">
                             <label class="radio-inline" for="radios-0">
                                 <input type="radio" name="radios" id="radios-0" value="0" checked="checked">
@@ -126,8 +170,71 @@
 
                 </fieldset>
             </form>
+            //////////////////////
+            <!-- class manager -->
+            <!-- class manager -->
+            <!-- class manager -->
+            <!-- class manager -->
+            <!-- class manager -->
+            <!-- class manager -->
 
-        </div>
+            <section id="EventManager">
+                <form class="form-horizontal">
+                    <fieldset>
+
+                        <!-- Form Name -->
+                        <legend>Event Manager</legend>
+
+                        <div class="col-lg-12">
+                            <h2>Events Information</h2>
+                            <div class="table-responsive">
+                                <table class="table table-bordered table-hover table-striped">
+                                    <thead>
+                                        <tr>
+                                            <th>Event Name</th>
+                                            <th>Event Type</th>
+                                            <th>Event Privacy</th>
+                                            <th>Event Begin</th>
+                                            <th>Event End</th>
+                                            <th>Event Begin</th>
+                                            <th>Action</th>
+                                            
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>event test</td>
+                                            <td>event test</td>
+                                            <td>event test</td>
+                                            <td>event test</td>
+                                            <td>event test</td>
+                                            <td>event test</td>
+                                            <th><a href=#>Modify</a><a href=#>Delete</a></th>
+                                        </tr>
+                                        <tr>
+                                            <td>event test</td>
+                                            <td>event test</td>
+                                            <td>event test</td>
+                                            <td>event test</td>
+                                            <td>event test</td>
+                                            <td>event test</td>
+                                            <th><a href=#>Modify</a><a href=#>D elete</a></th>
+                                        </tr>
+
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+
+                    </fieldset>
+                </form>
+
+               
+            </section>
+
+                
+
+</div>
         <!-- /#page-wrapper -->
 
     </div>
