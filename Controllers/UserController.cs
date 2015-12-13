@@ -21,5 +21,9 @@ namespace HackProElite.Controllers
         {
             return View();
         }
+        public ActionResult AdminModifyEvent()
+        {
+            return View();
+        }
     }
 }

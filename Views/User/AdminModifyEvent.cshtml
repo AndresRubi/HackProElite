@@ -1,0 +1,271 @@
+﻿
+@{
+    ViewBag.Title = "AdminModifyEvent";
+}
+
+
+<body>
+
+    <div id="wrapper">
+        <div id="page-wrapper">
+            
+                <h2>Events Information</h2>
+            
+            <input id="input-2" class="rating" data-min="0" data-max="5" data-step="0.1">
+
+                <form class="form-horizontal">
+
+                    <fieldset>
+
+                        <!-- Form Name -->
+                        <legend>Event Name and Info</legend>
+
+                        <!-- Text input-->
+                        <div class="form-group">
+                            <label class="col-md-4 control-label" for="eventName">Event Name</label>
+                            <div class="col-md-5">
+                                <input id="eventName" name="eventName" type="text" placeholder="name" class="form-control input-md">
+
+                            </div>
+                        </div>
+
+                        <!-- Textarea -->
+                        <div class="form-group">
+                            <label class="col-md-4 control-label" for="descriptionEvent">Event Description</label>
+                            <div class="col-md-4">
+                                <textarea class="form-control" id="descriptionEvent" name="descriptionEvent">only text</textarea>
+                            </div>
+                        </div>
+                        <!-- Button (Double) -->
+                        <div class="form-group">
+                            <label class="col-md-4 control-label" for="saveModifyEvent"></label>
+                            <div class="col-md-8">
+                                <button id="saveModifyEvent" name="saveModifyEvent" class="btn btn-success">Save</button>
+                                <button id="cancelModifyEvent" name="cancelModifyEvent" class="btn btn-danger">Cancel</button>
+                            </div>
+                        </div>
+                        <!-- Form Name -->
+                        <legend>Event Properties</legend>
+
+                        <!-- calendario -->
+                        <div class="form-group">
+                            <label class="col-md-4 control-label" for="dateEvent">Event Begin</label>
+                            <div class="col-md-5">
+                                <input type="date" name="dateStartEvent">
+                                <input type="time" name="beginEvent">
+
+                            </div>
+
+
+                        </div>
+
+                        <!-- Horas -->
+                        <div class="form-group">
+                            <label class="col-md-4 control-label" for="timeEvent">Event Ends</label>
+                            <div class="col-md-5">
+                                <input type="date" name="dateEndEvent">
+                                <input type="time" name="endEvent">
+                            </div>
+                        </div>
+                        <!-- Prepended text funds-->
+                        <div class="form-group">
+                            <label class="col-md-4 control-label" for="fundsEvent">Event Funds</label>
+                            <div class="col-md-4">
+                                <div class="input-group">
+                                    <span class="input-group-addon">Amount</span>
+                                    <input id="fundsEvent" name="fundsEvent" class="form-control" placeholder="lps" type="text" required="">
+                                </div>
+
+                            </div>
+                        </div>
+                        <!-- Prepended text price-->
+                        <div class="form-group">
+                            <label class="col-md-4 control-label" for="priceEvent">Event Price</label>
+                            <div class="col-md-4">
+                                <div class="input-group">
+                                    <span class="input-group-addon">Amount</span>
+                                    <input id="priceEvent" name="priceEvent" class="form-control" placeholder="lps" type="text" required="">
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <!-- Multiple Checkboxes (inline) -->
+                        <div class="form-group">
+                            <label class="col-md-4 control-label" for="voteTypeEvent">Votation Type</label>
+                            <div class="col-md-4">
+                                <label class="checkbox-inline" for="voteTypeEvent-0">
+                                    <input type="checkbox" name="voteTypeEvent" id="voteTypeEvent-0" value="0">
+                                    Public
+                                </label>
+                                <label class="checkbox-inline" for="voteTypeEvent-1">
+                                    <input type="checkbox" name="voteTypeEvent" id="voteTypeEvent-1" value="1">
+                                    Private
+                                </label>
+                            </div>
+                        </div>
+
+
+
+                        <!-- Multiple Radios (inline) -->
+                        <div class="form-group">
+                            <label class="col-md-4 control-label" for="typeEvent">TypeEvent</label>
+                            <div class="col-md-4">
+                                <label class="radio-inline" for="typeEvent-0">
+                                    <input type="radio" name="typeEvent" id="typeEvent-0" value="0" checked="checked">
+                                    Hacktathon
+                                </label>
+                                <label class="radio-inline" for="typeEvent-1">
+                                    <input type="radio" name="typeEvent" id="typeEvent-1" value="1">
+                                    Barcamp
+                                </label>
+                            </div>
+                        </div>
+
+                        <!-- Multiple Radios (inline) -->
+                        <div class="form-group">
+                            <label class="col-md-4 control-label" for="radios">Event Privacy</label>
+                            <div class="col-md-4">
+                                <label class="radio-inline" for="radios-0">
+                                    <input type="radio" name="radios" id="radios-0" value="0" checked="checked">
+                                    Private
+                                </label>
+                                <label class="radio-inline" for="radios-1">
+                                    <input type="radio" name="radios" id="radios-1" value="1">
+                                    Public
+                                </label>
+                            </div>
+                        </div>
+
+                        <!-- File Button -->
+                        <div class="form-group">
+                            <label class="col-md-4 control-label" for="imagenEvento">Imagen Del Evento</label>
+                            <div class="col-md-4">
+                                <input id="imagenEvento" name="imagenEvento" class="input-file" type="file">
+                            </div>
+                        </div>
+
+
+
+                        <!-- Button (Double) -->
+                        <div class="form-group">
+                            <label class="col-md-4 control-label" for="saveModifyEvent"></label>
+                            <div class="col-md-8">
+                                <button id="saveModifyEvent" name="saveModifyEvent" class="btn btn-success">Save</button>
+                                <button id="cancelModifyEvent" name="cancelModifyEvent" class="btn btn-danger">Cancel</button>
+                            </div>
+                        </div>
+
+                        <!-- Event Permisisions-->
+                        <legend>Event Permissions</legend>
+                        <!-- Search input-->
+                        <div class="form-group">
+                            <label class="col-md-4 control-label" for="searchJudgeEvent">Search User</label>
+                            <div class="col-md-4">
+                                <input id="searchJudgeEvent" name="searchJudgeEvent" type="search" placeholder="event judge" class="form-control input-md">
+
+                            </div>
+                        </div>
+
+                        <!-- Button -->
+                        <div class="form-group">
+                            <label class="col-md-4 control-label" for="addButton"></label>
+                            <div class="col-md-4">
+                                <button id="addButton" name="addButton" class="btn btn-primary">Add</button>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-12">
+                            <h2>Judges Information</h2>
+                            <div class="table-responsive">
+                                <table class="table table-bordered table-hover table-striped">
+                                    <thead>
+                                        <tr>
+                                            <th>Event Judge</th>
+                                            <th>Judge Info</th>
+                                            <th>Action</th>
+
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>event test</td>
+                                            <td>event test</td>
+                                            
+                                            <th><a href="#">Erase</a></th>
+                                        </tr>
+                                        </table>
+                                </div>
+                            </div>
+                        <!-- Button (Double) -->
+                        <div class="form-group">
+                            <label class="col-md-4 control-label" for="saveModifyEvent"></label>
+                            <div class="col-md-8">
+                                <button id="saveModifyEvent" name="saveModifyEvent" class="btn btn-success">Save</button>
+                                <button id="cancelModifyEvent" name="cancelModifyEvent" class="btn btn-danger">Cancel</button>
+                            </div>
+                        </div>
+
+                        <!-- Event PATROCINADORES-->
+                        <legend>Event Sponsors</legend>
+                        <!-- Text input-->
+                        <div class="form-group">
+                            <label class="col-md-4 control-label" for="sponsorEvent">Sponsor Name</label>
+                            <div class="col-md-4">
+                                <input id="sponsorEvent" name="sponsorEvent" type="text" placeholder="" class="form-control input-md">
+
+                            </div>
+                        </div>
+
+                        <!-- Textarea -->
+                        <div class="form-group">
+                            <label class="col-md-4 control-label" for="sponsorContributionEvent">Sponsor Type</label>
+                            <div class="col-md-4">
+                                <textarea class="form-control" id="sponsorContributionEvent" name="sponsorContributionEvent">how the sponsor contributes</textarea>
+                            </div>
+                        </div>
+
+                        <!-- Button (Double) -->
+                        <div class="form-group">
+                            <label class="col-md-4 control-label" for="saveModifyEvent"></label>
+                            <div class="col-md-8">
+                                <button id="saveModifyEvent" name="saveModifyEvent" class="btn btn-success">Add</button>
+                                <button id="cancelModifyEvent" name="cancelModifyEvent" class="btn btn-danger">Cancel</button>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-12">
+                            <h2>Sponsors Information</h2>
+                            <div class="table-responsive">
+                                <table class="table table-bordered table-hover table-striped">
+                                    <thead>
+                                        <tr>
+                                            <th>Event Sponsor Name</th>
+                                            <th>Sponsor Info</th>
+                                            <th>Action</th>
+
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>event Sponsor</td>
+                                            <td>event Sponsor</td>
+
+                                            <th><a href="#">Erase</a></th>
+                                        </tr>
+                                </table>
+                            </div>
+                        </div>
+                        <!-- Button (Double) -->
+                        <div class="form-group">
+                            <label class="col-md-4 control-label" for="saveModifyEvent"></label>
+                            <div class="col-md-8">
+                                <button id="saveModifyEvent" name="saveModifyEvent" class="btn btn-success">Save</button>
+                                <button id="cancelModifyEvent" name="cancelModifyEvent" class="btn btn-danger">Cancel</button>
+                            </div>
+                        </div>
+                    </fieldset>
+                </form>
+            </div>
+        </div>
+</body>
