@@ -16,3 +16,5 @@ C:\Users\PC\Documents\Visual Studio 2015\Projects\HackProElite\HackProElite\bin\
 C:\Users\PC\Documents\Visual Studio 2015\Projects\HackProElite\HackProElite\obj\Debug\HackProElite.dll
 C:\Users\PC\Documents\Visual Studio 2015\Projects\HackProElite\HackProElite\obj\Debug\HackProElite.pdb
 C:\Users\PC\Documents\Visual Studio 2015\Projects\HackProElite\HackProElite\obj\Debug\HackProElite.csprojResolveAssemblyReference.cache
+C:\Users\Rafael\Documents\GitHub\HackProElite\obj\Debug\HackProElite.dll
+C:\Users\Rafael\Documents\GitHub\HackProElite\obj\Debug\HackProElite.pdb
