@@ -8,68 +8,61 @@
 <body>
     <!-- Page Content -->
     <div class="container">
-          <nav id="mainNav" class="navbar navbar-default navbar-fixed-top">
-        <div class="container-fluid">
-            <!-- Brand and toggle get grouped for better mobile display -->
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                <a class="navbar-brand page-scroll" href="@Url.Action("Index","Home")#page-top">HackPro Elite</a>
+        <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+            <div class="container-fluid">
+                <!-- Brand and toggle get grouped for better mobile display -->
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand page-scroll" href="@Url.Action("Index","Home")#page-top">HackPro Elite</a>
+                </div>
+
+                <!-- Collect the nav links, forms, and other content for toggling -->
+                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li>
+                            <a class="page-scroll" href="@Url.Action("Index","Home")#about">Quienes Somos?</a>
+                        </li>
+                        <li>
+                            <a href="javascript:;" data-toggle="collapse" data-target="#Event">Eventos <i class="fa fa-fw fa-caret-down"></i></a>
+                            <ul id="Event" class="collapse">
+                                <li>
+                                    <a class="page-scroll" href="@Url.Action("Index","Home")#services">Nuestros Eventos</a>
+                                </li>
+                                <li>
+                                    <a href="@Url.Action("HackathonEvent","Home")">Hackathon</a>
+                                </li>
+                                <li>
+                                    <a href="@Url.Action("BarcampEvent","Home")">Barcamps</a>
+                                </li>
+
+                            </ul>
+                        </li>
+                        <li>
+                            <a class="page-scroll" href="@Url.Action("Index","Home")#portfolio">Populares</a>
+                        </li>
+                        <li>
+                            <a class="page-scroll" href="@Url.Action("Index","Home")#contact">Contactenos</a>
+                        </li>
+                        <li class="page-scroll">
+
+
+                            @Html.ActionLink("Login/Register", "Register", "Home")
+
+                        </li>
+
+
+
+                    </ul>
+                </div>
+                <!-- /.navbar-collapse -->
             </div>
-
-            <!-- Collect the nav links, forms, and other content for toggling -->
-            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                <ul class="nav navbar-nav navbar-right">
-                    <li>
-                        <a class="page-scroll" href="#about">Quienes Somos?</a>
-                    </li>
-                    <li>
-                        <a href="javascript:;" data-toggle="collapse" data-target="#Event">Events <i class="fa fa-fw fa-caret-down"></i></a>
-                        <ul id="Event" class="collapse">
-                            <li>
-                                <a href="#services">Eventos</a>
-                            </li>
-                            <li>
-                                <a href="@Url.Action("HackathonEvent","Home")">Hackathon</a>
-                            </li>
-                            <li>
-                                <a href="@Url.Action("BarcampEvent","Home")">Barcamps</a>
-                            </li>
-
-                        </ul>
-                    </li>
-                    <li>
-                        <a class="page-scroll" href="#portfolio">Populares</a>
-                    </li>
-                    <li>
-                        <a class="page-scroll" href="#contact">Contactenos</a>
-                    </li>
-                    
-                    <li class="page-scroll">
-                      
-          
-                        @Html.ActionLink("Login/Register", "Register", "Home")
-                    
-                    </li>
-                   
-                    <li class="page-scroll">
-
-
-                        @Html.ActionLink("Admin IndexTest", "AdminIndex", "User")
-
-                    </li>
-
-
-                </ul>
-            </div>
-            <!-- /.navbar-collapse -->
-        </div>
-        <!-- /.container-fluid -->
-    </nav>
+            <!-- /.container-fluid -->
+        </nav>
 
         <!-- Page Header -->
         <div class="row">
