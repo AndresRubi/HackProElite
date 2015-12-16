@@ -1,13 +1,17 @@
 ﻿@{
     var controller = HttpContext.Current.Request.RequestContext.RouteData.Values["Controller"].ToString();
-    
+
     if (controller == "User")
     {
         Layout = "~/Views/Shared/_UserLayout.cshtml";
     }
-    else
+    else if(controller == "Home")
     {
         Layout = "~/Views/Shared/_Layout.cshtml";
+    }
+    else if(controller == "Barcamp" || controller == "Hackathon")
+    {
+        Layout = "~/Views/Shared/_EventTypeLayout.cshtml";
     }
 
 }

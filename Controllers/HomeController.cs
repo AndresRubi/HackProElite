@@ -19,8 +19,16 @@ namespace HackProElite.Controllers
             return View();
         
         }
+        public ActionResult BarcampEvent()
+        {
+            return View();
+        }
+        public ActionResult HackathonEvent()
+        {
+            return View();
+        }
+        
 
-       
     }
 
     }

@@ -12,7 +12,7 @@
                 <fieldset>
 
                     <!-- Form Name -->
-                    <legend>Form Name</legend>
+                    <legend>User Form</legend>
 
                     <!-- Text input-->
                     <div class="form-group">
@@ -50,6 +50,15 @@
                         </div>
                     </div>
 
+                    <!-- USERNAME input-->
+                    <div class="form-group">
+                        <label class="col-md-4 control-label" for="usernameUser">Username</label>
+                        <div class="col-md-4">
+                            <input id="usernameUser" name="usernameUser" type="text" placeholder="" class="form-control input-md">
+
+                        </div>
+                    </div>
+
                     <!-- Password input-->
                     <div class="form-group">
                         <label class="col-md-4 control-label" for="password1User">Password</label>
@@ -67,7 +76,14 @@
 
                         </div>
                     </div>
+                    <!-- PHONE NUMBER input-->
+                    <div class="form-group">
+                        <label class="col-md-4 control-label" for="numberUser">Phone Number</label>
+                        <div class="col-md-4">
+                            <input id="numberUser" name="numberUser" type="text" placeholder="" class="form-control input-md">
 
+                        </div>
+                    </div>
                     <!-- Select Basic -->
                     <div class="form-group">
                         <label class="col-md-4 control-label" for="currencyUser">Currency</label>
@@ -115,7 +131,15 @@
                             </select>
                         </div>
                     </div>
+                    <!-- calendario -->
+                    <div class="form-group">
+                        <label class="col-md-4 control-label" for="dateEvent">Date of Birth</label>
+                        <div class="col-md-5">
+                            <input type="date" name="dateStartEvent">
+                        </div>
 
+
+                    </div>
                     <!-- Button -->
                     <div class="form-group">
                         <label class="col-md-4 control-label" for="createUser"></label>
@@ -126,8 +150,78 @@
 
                 </fieldset>
             </form>
+            <!-- class manager -->
+            <!-- class manager -->
+            <!-- class manager -->
+            <!-- class manager -->
+            <!-- class manager -->
+            <!-- class manager -->
+
+            <section id="EventManager">
+                <form class="form-horizontal">
+                    <fieldset>
+
+                        <!-- Form Name -->
+                        <legend>User Manager</legend>
+
+                        <div class="col-lg-12">
+                            <h2>User Information</h2>
+                            <div class="table-responsive">
+                                <table class="table table-bordered table-hover table-striped">
+                                    <thead>
+                                        <tr>
+                                            <th>Event Name</th>
+                                            <th>Event Type</th>
+                                            <th>Event Privacy</th>
+                                            <th>Event Begin</th>
+                                            <th>Event End</th>
+                                            <th>Event Begin</th>
+                                            <th>Action</th>
+
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>event test</td>
+                                            <td>event test</td>
+                                            <td>event test</td>
+                                            <td>event test</td>
+                                            <td>event test</td>
+                                            <td>event test</td>
+                                            <th><a href="@Url.Action("AdminModifyUser","User")">Modify</a><a href="#">Delete</a></th>
+                                        </tr>
+                                        <tr>
+                                            <td>event test</td>
+                                            <td>event test</td>
+                                            <td>event test</td>
+                                            <td>event test</td>
+                                            <td>event test</td>
+                                            <td>event test</td>
+                                            <th><a href=#>Modify</a><a href=#>D elete</a></th>
+                                        </tr>
+
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+
+                    </fieldset>
+                </form>
+
+
+            </section>
 
         </div>
     </div>
-
+    <style>
+        .trash { color:rgb(209, 91, 71); }
+.flag { color:rgb(248, 148, 6); }
+.panel-body { padding:0px; }
+.panel-footer .pagination { margin: 0; }
+.panel .glyphicon,.list-group-item .glyphicon { margin-right:5px; }
+.panel-body .radio, .checkbox { display:inline-block;margin:0px; }
+.panel-body input[type=checkbox]:checked + label { text-decoration: line-through;color: rgb(128, 144, 160); }
+.list-group-item:hover, a.list-group-item:focus {text-decoration: none;background-color: rgb(245, 245, 245);}
+.list-group { margin-bottom:0px; }
+    </style>
 </body>
